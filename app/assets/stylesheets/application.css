@@ -1,0 +1,159 @@
+html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Catamaran', Arial, Helvetica, sans-serif;
+}
+
+body {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background-color: #edeeef;
+}
+
+header {
+  position: sticky;
+  padding: 12px 0;
+  height: 40px;
+  width: 100%;
+  background-color: #f6f7f8;
+  border-bottom: 1px solid #c1c2c4;
+}
+
+main {
+  margin: 0 auto;
+  width: 640px;
+  padding: 100px auto;
+}
+
+#nav > a {
+  margin: 0 0 0 18px;
+}
+
+a:link {
+  color: #070707;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #070707;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #070707;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color: #070707;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+h1 {
+  margin:0;
+}
+
+ul {
+  list-style-type: none;
+  vertical-align:middle;
+  text-align: right;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+li {
+  vertical-align: middle;
+  display: inline;
+}
+
+.avatar {
+  height: 35px;
+  width: 35px;
+  border: 2px solid #e73a82;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.username {
+  height: 40px;
+  padding: 6px 0 0 12px;
+}
+
+.post {
+  margin: 24px 0;
+  border: 1px solid #c1c2c4;
+  border-radius: 2px;
+}
+
+.post-header {
+  background-color: #f6f7f8;
+  padding: 10px 0 0 8px;
+  display: flex;
+}
+
+.post-image {
+  display: block;
+  width: 640px;
+  height: 640px;
+  overflow: hidden;
+}
+
+.post-image img {
+  width: 638px;
+  height: 100%;
+}
+
+.post-desc {
+  background-color: #f6f7f8;
+  padding: 12px;
+}
+
+.post-comments {
+  background-color: #f6f7f8;
+}
+
+.post-comment {
+  background-color: #f6f7f8;
+}
+
+.thin {
+  display: inline;
+  font-weight: 100;
+}
+
+
+#nav { 
+  height: 100%;
+  position: absolute;
+  top: 24%;
+  right: 0;
+}
+
+#instagram {
+  vertical-align: middle;
+  float: left;
+  font-size: 40px;
+  color: #070707;
+  font-family: 'Cookie', cursive;
+  text-decoration: none;
+}
+
+#header-bits {
+  position: relative;
+  margin: 0 auto;
+  width: 640px;
+  height: inherit;
+}
+
+@media screen and (max-width: 640px) {
+  #header-bits {
+    width: 100%;
+  }
+}

@@ -1,0 +1,12 @@
+<h1>New Post</h1>
+
+<%= form_with model: @post do |form| %>
+  <%= form.label :image, "Image" %>
+  <%= form.file_field :image %> 
+  <br><br>
+  <%= form.label :desc, "Description" %>
+  <%= form.text_area :desc %> 
+  <br><br>
+  <%= form.hidden_field :user_id, value: current_user.id %>
+  <%= form.submit "Create post" %>
+<% end %>

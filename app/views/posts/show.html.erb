@@ -1,0 +1,38 @@
+<h1>Posts</h1>
+
+    <div class="post">
+      <div class="post-header">
+        <div class="avatar">
+        <%= image_tag((User.find_by(id: @post.user_id)).avatar) %>
+        </div>
+        <div class="username">
+        <%= (User.find_by(id: @post.user_id)).username %>
+        </div>
+        <%# TO DO post actions %>
+      </div>
+      <div class="post-image">
+        <% if @post.image %>
+        <%= link_to image_tag(@post.image) %>
+        <% end %>
+      </div>
+      <div class="post-actions"></div>
+      <div class="post-likes"></div>
+      <div class="post-desc">
+        <%= (User.find_by(id: @post.user_id)).username %>
+        <div class="thin"><%= @post.desc %></div>
+      </div>
+      <div class="post-comments">
+        <% if @post.comments %>
+        <%= @post.comments.last %><br>
+        <% end %>
+      </div>
+    </div>
+
+<%= form_with model: @comment, url: comments_path do |form| %>
+  <%= form.label :content, "Comment" %>
+  <%= form.text_area :content %> 
+  <%= form.hidden_field :post_id, value: @post.id %>
+  <%= form.hidden_field :user_id, value: current_user.id %>
+  <%= form.submit ">>" %>
+<% end %>
+<%# TO DO show comments %>
